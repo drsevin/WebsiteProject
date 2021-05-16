@@ -1,0 +1,282 @@
+.resimSlider{
+    height: 600px;
+    padding-top: 50px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+body{
+    padding-top: 70px;
+    font-family: 'Playfair Display', serif;
+    
+}
+
+.tanitim{
+    background-color: rgb(255, 255, 255) ;
+}
+.mTanitim{
+    background-color: rgb(255, 255, 255);
+}
+.yanmenu{
+    background-color: rgb(43, 4, 43);
+}
+
+.hakkimizda{
+    background-color:rgb(136, 189, 136);
+}
+
+
+.ayrac{
+    border: none;
+    border-top: 3px solid;
+    color: rgb(158, 78, 204);
+    max-width: 350px;
+    margin: 25px auto;
+}
+.sAyrac{
+    border: none;
+    border-top: 4px solid;
+    color: rgb(159, 36, 161);
+    max-width: 350px;
+    margin: 25px auto;
+
+}
+
+#sslide{
+    padding-bottom: 40px;
+}
+
+.ekipCard>img:hover{
+    opacity: 0.8;
+}
+
+.card-img-top{
+    height: 270px;
+    width: 370px;
+}
+.yuzdekonum{
+    position: relative;
+    float: right;
+}
+
+.ana{
+    margin: 0;
+    border: 0;
+    padding: 0;
+    font-size: 16px;
+    font-family: sans-serif;
+    overflow-x: hidden;
+    position: relative;
+    vertical-align: baseline;
+    background-color: rgb(188, 211, 219);
+}
+
+.about,.skills,
+.education,.computer,
+.Languages,.habits{
+    padding: 40px;
+    min-height: 330px;
+
+}
+
+.education,.Languages{
+    margin-top: 30px;
+}
+
+.profile{
+    text-align: center;
+    min-height: 400px;
+    overflow: hidden;
+    position: relative;
+    padding-top: 160px;
+    padding-bottom: 140px;
+}
+
+.profile img{
+    display: inline-block !important;
+    border: 3px solid white;
+    padding: 5px;
+}
+
+.profile h1{
+    padding-top: 40px;
+}
+
+.about{
+    background: white;
+}
+
+.computer{
+    background: #6e96e6;
+    color: #f5f5f5;
+    
+
+}
+
+.computer .progress{
+    border-radius: 0px;
+    height: 4px;
+}
+
+.computer .progress .progress-bar-primary{
+    background: #5e2143;
+}
+
+.computer strong{
+    display: inline-block;
+    font-weight: normal;
+    padding-bottom: 6px;
+}
+
+.semi-bold{
+    font-weight: 500;
+    font-size: 16px;
+    color: rgb(22, 82, 82);
+}
+
+.education{
+    background: #6e96e6;
+    color: #40947f;
+    width: 550px;
+    
+}
+.education ul {
+    padding-left: 40px;
+    overflow: hidden;
+    list-style-type: none;
+    
+}
+
+.education ul li{
+    position: relative;
+    
+}
+
+.education ul li .date{
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 15px;
+    color: rgb(46, 28, 2);
+}
+
+.education ul li .info{
+    margin-bottom: 20px;
+
+}
+
+.education ul li:last-child .info{
+    margin-bottom: 0;
+}
+
+.education ul li:before{
+    content: "";
+    position: absolute;
+    top: 7px;
+    left: -22px;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    border: 2px solid #6bf7d4;
+}
+
+.education ul li:after{
+    content: "";
+    position: absolute;
+    top: 14px;
+    left: -21px;
+    width: 2px;
+    height: 115px;
+    border: 2px solid #6bf7d4;
+}
+
+.education.education-content{
+    padding-bottom: 14px;
+}
+
+.education h5{
+    display: inline-block;
+}
+
+.education span{
+    margin-right: 10px;
+    padding-left: 20px;
+}
+
+.Languages{
+    background: white;
+    margin-top: 7px;
+    width: 350px;
+    
+}
+
+.Languages .progress{
+    border-radius: 0px;
+    height: 4px;
+}
+
+.Languages .progress .progress-bar-primary{
+    background: #5e2143;
+}
+
+.skills{
+    background: rgb(255, 255, 255);
+    margin: 25px 0;
+    color: rgb(252, 125, 103);
+}
+
+.skills ul{
+    padding: 10px;
+}
+
+.skills ul li{
+    padding-bottom: 6px;
+}
+
+.altmenu{
+    height: 120px;
+    padding-top: 20px;
+    text-align: center;
+    background: #212529!important;
+}
+
+.altyazi{
+    color: #1e5270;
+    margin-top: 20px;
+    text-align: center;
+}
+
+
+
+.altmenu a:link{
+    color: #fff;
+    text-decoration: none;
+}
+
+.altmenu a:visited{
+    color: #fff;
+    text-decoration: none;
+}
+
+.altmenu a:hover{
+    color: #fff;
+    text-decoration: none;
+}
+
+.altmenu a:active{
+    color: #fff;
+    text-decoration: none;
+}
+
+.habits{
+    background: #6e96e6;
+    margin: 25px 0;
+    color: rgb(103, 252, 140);
+}
+
+.habits ul{
+    padding: 10px;
+}
+
+.habits ul li{
+    padding-bottom: 6px;
+}

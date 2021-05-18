@@ -1,4 +1,5 @@
 .resimSlider{
+
     height: 600px;
     padding-top: 50px;
     padding-left: 30px;
@@ -6,6 +7,7 @@
 }
 
 body{
+
     padding-top: 70px;
     font-family: 'Playfair Display', serif;
     
@@ -94,7 +96,7 @@ body{
 
 .profile img{
     display: inline-block !important;
-    border: 3px solid white;
+    border: 3px solid rgb(137, 79, 155);
     padding: 5px;
 }
 
@@ -104,6 +106,45 @@ body{
 
 .about{
     background: white;
+}
+
+.miras{
+    background-color: rgb(156, 149, 118);
+    text-align: center;
+    min-height: 800px;
+    overflow: hidden;
+    position: relative;
+    padding-top: 60px;
+    padding-bottom: 140px;
+}
+
+.mMiras{
+  
+    background-color: gainsboro;
+
+}
+
+.miras img{
+    display: inline-block !important;
+    border: 3px solid rgb(102, 55, 33);
+    padding: 5px;
+}
+
+.miras h2{
+    padding-top: 40px;
+}
+
+.aboutMiras{
+    color: beige;
+    padding: 40px ;
+    margin: 60px 60px 60px 60px;
+    min-height: 500px;
+    background: rgb(155, 102, 102);
+}
+
+
+.aboutMiras p{
+    text-indent:50px; 
 }
 
 .computer{
@@ -279,4 +320,41 @@ body{
 
 .habits ul li{
     padding-bottom: 6px;
+}
+
+.sportanitim{
+    width: 400px;
+    margin:auto;
+}
+.sagresim{
+    float:right;
+    padding:0 0 10px 10px;
+}
+     
+.solresim{
+    float:left;
+    padding:0 10px 10px 0;
+}
+
+.sportanitim p{
+    text-indent:50px; 
+}
+.spor{
+    width: 500px;
+    color: beige;
+    padding: 20px ;
+    margin: 30px 30px 30px 30px;
+    min-height: 1500px;
+    background: rgb(160, 29, 29);
+}
+.mltSpor{
+    width: 500px;
+    color: beige;
+    padding: 20px ;
+    margin: 30px 30px 30px 30px;
+    min-height: 1500px;
+    background: rgb(177, 126, 50);
+}
+.stakim{
+    background-color: rgb(223, 218, 177);
 }

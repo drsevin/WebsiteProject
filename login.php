@@ -1,3 +1,28 @@
+<?php
+    $kullaniciadi = $_POST['kullaniciadi'];
+    $sifre = $_POST['sifre'];
+    $error = "";
+    $success = "";
+
+    if(isset($_POST['oturum'])){
+        if($kullaniciadi=="b191210007@sakarya.edu.tr"){
+            if($sifre=="b191210007"){
+                $error = "";
+                header("Location : oturumkontrol.php");
+            }
+            else{
+                $error = "Parola Yanlış";
+                $success = "";
+            }
+        }
+        else{
+            $error = "Kullanıcı Adı Yanlış";
+            $success = "";
+        }
+    }
+
+?>
+
 <!doctype html>
 <html lang="en">
   <head>
@@ -22,7 +47,7 @@
 
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
         <div class="container-fluid">
-          <a class="navbar-brand" href="index.html"><img src="resimler/kayisi.png" class="rounded-circle" width=50px height=50px alt="Kayısı Logo" title="Kayısı Logo"></a>
+          <a class="navbar-brand" href="index.html" ><img src="resimler/kayisi.png" class="rounded-circle" width=50px height=50px alt="Kayısı Logo" title="Kayısı Logo"></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -56,75 +81,66 @@
           </form>
         </div>
       </nav>
+      <!--Menü Kısmı Bitişi-->
 
-      
-      <!--İletişim Başlangıcı-->
-      <section class="p-5 text-center iletisim">
-        <div class="container">
-          <h2 class="mb-5 font-weight-bold">İletişim</h2>
-          <hr class="ayrac">
-
-          <form action="index.html" accept="ilet.php" method="GET" class="col-md-10 text-left m-auto">
-            <div class="form-group row">
-              <label for="" class="col-md-1 align-self-center">Ad:</label>
-              <input type="text" class="form-control col-md-11">
-            </div><br>
-            <div class="form-group row">
-              <label for="" class="col-md-1 align-self-center">Soyad:</label>
-              <input type="text" class="form-control col-md-11">
-            </div><br>
-            <div class="form-group row">
-              <label for="" class="col-md-1 align-self-center">Email:</label>
-              <input type="email" class="form-control col-md-11">
-            </div><br>
-            <div class="form-group row">
-              <label for="" class="col-md-1 align-self-center">Mesajınız:</label>
-              <textarea name="" id="" cols="30" rows="10" class="form-control col-md-11"></textarea>
-            </div><br>
-            <div class=" clearfix">
-              <button type="submit" class="col-md-3 p-2 btn-outline-success float-end">GÖNDER</button>
-              <button type="reset" class="col-md-3 p-2  btn-secondary float-start">TEMİZLE</button>
-            </div>
-
-          </form>
-        </div>
-      </section>
- 
-      <!--İletişim Bitişi-->
-
-      
-
-
-
-
-
-
-
-    <!--Menü Kısmı Bitişi-->
-
-    <!--Footer Başlangıcı-->
-    <footer class="altmenu">
+    <section >
       <div class="container">
-        <a href="https://www.instagram.com/sevinndr/" target="_blank">
-          <i class="fa fa-instagram fa-lg white-text mr-md-5 mr-3 fa-2x"></i>
-        </a>
-        <a href="https://github.com/drsevin" target="_blank">
-          <i class="fa fa-github fa-lg white-text mr-md-5 mr-3 fa-2x"></i>
-        </a>
-        <a href="https://tr.linkedin.com/in/%C5%9Fevin-sena-dere-aa4a861b3" target="_blank">
-          <i class="fa fa-linkedin fa-lg white-text mr-md-5 mr-3 fa-2x"></i>
-        </a>
-        
+        <div class="row justify-content-center">
+          <div class="col-12 align-self-center">
+            <div class="col-6 align-self-center oturum">
+              <h2 class="text-center p-4">OTURUM AÇ</h2>
+              <br>
+              <p class="error"><?php echo $error ; ?></p><p class="success"><?php echo $success ; ?></p>
+              <form action="oturumkontrol.php" method="POST">
+                <div class="row justify-content-center ">
+                  <div class="col-12 koturum">
+                    <label>Kullanıcı Adı : </label>
+                    <input autofocus="autofocus" type="email" class="form-control koturum" name="kullaniciadi" placeholder="Kullanıcı Adı" required>
+                  </div>
+                  <div class="col-12 koturum">
+                    <label>Şifre : </label>
+                    <input autocomplete="off" type="password" class="form-control koturum" name="sifre" placeholder="Şifre" required>
+                  </div>
+                  <div class="col-12 koturum">
+                    <button type="submit" class="btn btn-block btn-dark koturum" name="oturum">OTURUM AÇ</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
       </div>
-      <div>
-        <p class="altyazi">
-          <span>Tüm Hakları Saklıdır &copy; | 2021 </span><br>
-          <span>Designed by <b>Şevin Sena Dere</b></span>
-        </p>
-      </div>
+    </section>
 
-    </footer>
-    <!--Footer Bitişi-->
+    
+
+
+      <!--Footer Başlangıcı-->
+      <footer class="altmenu">
+        <div class="container">
+          <a href="https://www.instagram.com/sevinndr/" target="_blank">
+            <i class="fa fa-instagram fa-lg white-text mr-md-5 mr-3 fa-2x"></i>
+          </a>
+          <a href="https://github.com/drsevin" target="_blank">
+            <i class="fa fa-github fa-lg white-text mr-md-5 mr-3 fa-2x"></i>
+          </a>
+          <a href="https://tr.linkedin.com/in/%C5%9Fevin-sena-dere-aa4a861b3" target="_blank">
+            <i class="fa fa-linkedin fa-lg white-text mr-md-5 mr-3 fa-2x"></i>
+          </a>
+          
+        </div>
+        <div>
+          <p class="altyazi">
+            <span>Tüm Hakları Saklıdır &copy; | 2021 </span><br>
+            <span>Designed by <b>Şevin Sena Dere</b></span>
+          </p>
+        </div>
+
+      </footer>
+      <!--Footer Bitişi-->
+
+
+    
 
     <!-- Optional JavaScript; choose one of the two! -->
 

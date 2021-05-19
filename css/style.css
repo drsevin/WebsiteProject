@@ -15,6 +15,7 @@ body{
 
 .tanitim{
     background-color: rgb(255, 255, 255) ;
+    
 }
 .mTanitim{
     background-color: rgb(255, 255, 255);
@@ -357,4 +358,22 @@ body{
 }
 .stakim{
     background-color: rgb(223, 218, 177);
+}
+
+#movie{
+    border-top: 1px solid rgb(94, 45, 33);
+}
+.latest-heading{
+    margin: 30px 30px 0px 30px ;
+    font-weight: 500;
+    font-size: 1.3rem;
+}
+
+.oturum{
+    align-content: center;
+    margin: 100px 0px 300px 300px;
+}
+.koturum{
+    margin-top: 15px;
+    
 }

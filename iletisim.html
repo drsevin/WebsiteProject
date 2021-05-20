@@ -52,34 +52,34 @@
             </ul>
           </div>
           <form class="d-flex">
-            <button class="btn btn-outline-success" type="submit"><a class="nav-link" href="oturum.html">Oturum Aç</a></button>
+            <button class="btn btn-outline-success" type="submit"><a class="nav-link" href="login.html">Oturum Aç</a></button>
           </form>
         </div>
       </nav>
 
       
       <!--İletişim Başlangıcı-->
-      <section class="p-5 text-center iletisim">
+      <section class="p-5 text-center ">
         <div class="container">
           <h2 class="mb-5 font-weight-bold">İletişim</h2>
           <hr class="ayrac">
 
-          <form action="index.html" accept="ilet.php" method="GET" class="col-md-10 text-left m-auto">
+          <form action="iletisimgonder.php"  method="POST" class="col-md-10 text-left m-auto" target="_blank">
             <div class="form-group row">
               <label for="" class="col-md-1 align-self-center">Ad:</label>
-              <input type="text" class="form-control col-md-11">
+              <input type="text" name="ad" class="form-control col-md-11" placeholder="Ad">
             </div><br>
             <div class="form-group row">
               <label for="" class="col-md-1 align-self-center">Soyad:</label>
-              <input type="text" class="form-control col-md-11">
+              <input type="text" name = "soyad" class="form-control col-md-11" placeholder="Soyad">
             </div><br>
             <div class="form-group row">
               <label for="" class="col-md-1 align-self-center">Email:</label>
-              <input type="email" class="form-control col-md-11">
+              <input type="email" name="mail" class="form-control col-md-11" placeholder="name@example.com">
             </div><br>
             <div class="form-group row">
               <label for="" class="col-md-1 align-self-center">Mesajınız:</label>
-              <textarea name="" id="" cols="30" rows="10" class="form-control col-md-11"></textarea>
+              <textarea name="mesaj" id="" cols="30" rows="10" class="form-control col-md-11" ></textarea>
             </div><br>
             <div class=" clearfix">
               <button type="submit" class="col-md-3 p-2 btn-outline-success float-end">GÖNDER</button>

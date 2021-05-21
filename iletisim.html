@@ -64,7 +64,7 @@
           <h2 class="mb-5 font-weight-bold">İletişim</h2>
           <hr class="ayrac">
 
-          <form action="iletisimgonder.php"  method="POST" class="col-md-10 text-left m-auto" target="_blank">
+          <form action="iletisimgonder.php" name="girisForm" onsubmit="return isValid(this)" method="POST" class="col-md-10 text-left m-auto" target="_blank">
             <div class="form-group row">
               <label for="" class="col-md-1 align-self-center">Ad:</label>
               <input type="text" name="ad" class="form-control col-md-11" placeholder="Ad">
@@ -75,7 +75,7 @@
             </div><br>
             <div class="form-group row">
               <label for="" class="col-md-1 align-self-center">Email:</label>
-              <input type="email" name="mail" class="form-control col-md-11" placeholder="name@example.com">
+              <input type="text" name="mail" class="form-control col-md-11" placeholder="name@example.com">
             </div><br>
             <div class="form-group row">
               <label for="" class="col-md-1 align-self-center">Mesajınız:</label>
@@ -92,7 +92,41 @@
  
       <!--İletişim Bitişi-->
 
-      
+      <script>
+        
+         function isValid(frm)
+        {
+          var adi = frm.ad.value;
+          var soyadi = frm.soyad.value;
+          var mesaj = frm.mesaj.value;
+          var email = frm.mail.value;
+          var atpos=email.indexOf("@");
+          var dotpos=email.lastIndexOf(".");
+
+          if ( adi==null || adi=="" || adi.length < 3 )
+          {
+            alert(" Ad 3 karakterden az olamaz !");
+            return false;
+          }
+          if ( soyadi == null || soyadi == "" || adi.length < 2)
+          {
+            alert("Soyad 2 karakterden az olamaz !");
+            return false;
+          }
+          if ( atpos<1 || dotpos<atpos+2 || dotpos+2>=email.length )
+          {
+            alert("Geçerli email adresi girin");
+            return false;
+          }   
+          if ( mesaj==null || mesaj==""  )
+          {
+            alert(" Lütfen mesaj ekleyin !");
+            return false;
+          }   
+            return true;
+        }
+
+      </script>
 
 
 

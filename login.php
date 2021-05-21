@@ -7,6 +7,7 @@ if($_POST){
     if($kadi == "b191210007@sakarya.edu.tr"){
        if($sifre == "b191210007"){
         echo "Hoşgeldiniz ".$sifre;
+        header("Refresh:3; url=index.html");
 
        }else{
            echo "Şifrenizi Yanlış Girdiniz!!! Lütfen Yeniden Deneyiniz.";

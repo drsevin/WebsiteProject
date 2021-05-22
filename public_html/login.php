@@ -11,7 +11,7 @@ if($_POST){
 
        }else{
            echo "Şifrenizi Yanlış Girdiniz!!! Lütfen Yeniden Deneyiniz.";
-           header("Refresh:3; url=login.html");
+           header("Refresh:4; url=login.html");
        }
         
     }

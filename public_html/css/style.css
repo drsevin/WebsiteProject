@@ -14,11 +14,11 @@ body{
 }
 
 .tanitim{
-    background-color: rgb(255, 255, 255) ;
+    background-color: whitesmoke ;
     
 }
 .mTanitim{
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(219, 212, 219);
 }
 .yanmenu{
     background-color: rgb(43, 4, 43);
@@ -111,7 +111,9 @@ body{
 .about{
     background: white;
 }
-
+.about h3{
+    text-align: center;
+}
 .miras{
     background-color: rgb(156, 149, 118);
     text-align: center;
@@ -290,6 +292,7 @@ body{
 }
 
 .altmenu{
+    
     height: 120px;
     padding-top: 20px;
     text-align: center;
@@ -392,65 +395,16 @@ body{
     margin-top: 15px;
 }
 
-
-
-.user{
-    background-color: #ddd;
-    padding: 1rem;
-    margin-bottom: 1rem;
+#player{
+    margin: 60px ;
+    background-color: rgb(231, 193, 66);
+    padding: 40px;
+    
+    
+}
+.ilgialan{
+    
+    margin-top: 50px;
+    color: rgb(104, 16, 16);
 }
 
-.app{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    background: rgba(0,0,0,.7);
-    height: 100vh;
-}
-.header{
-    padding: 50px 20px 30px 20px;
-}
-.header h1{
-    font-size: 50px;
-    color: #fbb034;
-    text-shadow: 1px 3px rgba(0,0,0,.9);
-}
-
-.header input{
-    width: 100%;
-    padding: 10px;
-    background: transparent;
-    border: 0;
-    outline: 0;
-    border-bottom: 2px solid #fbb034;
-    text-align: center;
-    font-size: 20px;
-    color: #f2f2f2;
-
-}
-.city{
-    font-size: 35px;
-    font-weight: 500;
-    margin-bottom: 10px;
-    text-shadow: 1px 3px rgba(0,0,0,.8);
-}
-
-.temp{
-    font-size: 100px;
-    font-weight: 700;
-    margin-bottom: 15px;
-    text-shadow: 1px 5px rgba(0,0,0,1);
-}
-
-.desc{
-    font-size: 25px;
-    font-style: italic;
-    text-shadow: 1px 3px rgba(0,0,0,.8);
-    margin-bottom: 10px;
-}
-
-.minmax{
-    font-size: 24px;
-    text-shadow: 1px 3px rgba(0,0,0,.8);
-}
